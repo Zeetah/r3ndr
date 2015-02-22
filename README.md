@@ -1,3 +1,5 @@
+![alt tag](https://travis-ci.org/Zeetah/r3ndr.svg?branch=master)
+
 # R3ndr
 
 R3ndr is template engine for browser and backend (node). It maps data object to String templates by id and class data-bind attributes.
