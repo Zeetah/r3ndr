@@ -7,7 +7,7 @@ var gulp        = require('gulp'),
 
 gulp.task('bundle', function() {
   var bundle = browserify({
-    entries: ['./lib/r3ndr.js'],
+    entries: ['./index.js'],
     fullPaths: false
   }).bundle();
 
