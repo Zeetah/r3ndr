@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+  <style type="text/css">
+    .name {
+      color: red;
+    }
+    .extended {
+      color: green: ;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="example"></div>
+
+  <script type="text/javascript" src="dist/r3ndr.min.js"></script>
+
+  <script type="text/javascript">
+    var example = R.render('<div>Hello <span class="name"></span></div>', {name: { text: 'Example'}}, {
+      name: {
+        text: function() {
+          return '<span class="extended">Extended</span> ' + this.text;
+        }
+      }
+    });
+    var div = document.createElement('div');
+    div.innerHTML = example;
+    document.getElementsByClassName('example')[0].appendChild(div.firstChild);
+  </script>
+</body>
+</html>
