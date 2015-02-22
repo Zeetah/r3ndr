@@ -4,6 +4,8 @@
 
 R3ndr is template engine for browser and backend (node). It maps data object to String templates by id and class data-bind attributes.
 
+The idea came from https://github.com/leonidas/transparency. So thanks to there!
+
 
 #####Load browser:
 
